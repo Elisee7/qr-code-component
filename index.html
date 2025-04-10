@@ -13,6 +13,13 @@
   <title>Frontend Mentor | QR code component</title>
 
   <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
     .slate-300 {
       background-color: hsl(212, 45%, 89%);
     }
@@ -49,6 +56,7 @@
 
     .margin-top-300 { margin-top: 24px; }      
     .margin-bottom-500 { margin-bottom: 40px; }      
+    .margin-bottom-300 { margin-bottom: 24px; }      
 
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -61,18 +69,14 @@
 
     .container {
       width: 325px;
-      height: 520px;
+      height: 530px;
       background-color: white;
       border-radius: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: auto;
-      margin-bottom: auto;
-    }
+   }
 
     h1 {
       width: 256px;
@@ -88,6 +92,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-align: center;
     }
   </style>
 </head>
@@ -98,13 +103,13 @@
     <div class="margin-top-200 margin-left-200 margin-right-200">
       <img src="./images/image-qr-code.png" alt="QR Code">
     </div>
-    <div class="card margin-top-300 margin-bottom-500 margin-left-200 margin-right-200">
+    <div class="card margin-top-300 margin-bottom-300 margin-left-200 margin-right-200">
       <h1 class="text-preset-1 slate-900">Improve your front-end skills by building projects</h1>
       <p class="text-preset-2 slate-500">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
     </div>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Elisee</a>.
+    <div class="attribution ">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Elisee</a>.</p>
     </div>
   </div>
   
