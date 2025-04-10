@@ -5,24 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Integration de FONT 'Outfit' -->
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
   
   <title>Frontend Mentor | QR code component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    .slate-300 {
+      background-color: hsl(212, 45%, 89%);
+    }
+
+
+    .slate-900 {
+      color: hsl(218, 44%, 22%);
+    }
+
+    .slate-500 {
+      color: hsl(216, 15%, 48%);
+    }
+
+    .text-preset-1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 22px;
+      font-weight: 700; /* for bold */
+      line-height: 120%;
+      letter-spacing: 0px;
+    }
+
+    .text-preset-2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      font-weight: 400; /* for normal */
+      line-height: 140%;
+      letter-spacing: 0px;
+    }
+
+    /* Espacement avec des valeurs définies par un design system */
+    .margin-top-200 { margin-top: 16px; }   /* Espacement léger */
+    .margin-left-200 { margin-left: 16px; }   /* Espacement léger */
+    .margin-right-200 { margin-right: 16px; }   /* Espacement léger */
+
+    .margin-top-300 { margin-top: 24px; }      
+    .margin-bottom-500 { margin-bottom: 40px; }      
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    img {
+      width: 288px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .container {
+      width: 325px;
+      height: 520px;
+      background-color: white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    h1 {
+      width: 256px;
+      height: auto;
+    }
+    p {
+      width: 256px;
+      height: auto;
+    }
+    .card {
+      width: 288px;
+      height: 131px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   </style>
 </head>
-<body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+<body class="slate-300">
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+
+  <div class="container">
+    <div class="margin-top-200 margin-left-200 margin-right-200">
+      <img src="./images/image-qr-code.png" alt="QR Code">
+    </div>
+    <div class="card margin-top-300 margin-bottom-500 margin-left-200 margin-right-200">
+      <h1 class="text-preset-1 slate-900">Improve your front-end skills by building projects</h1>
+      <p class="text-preset-2 slate-500">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Elisee</a>.
+    </div>
   </div>
+  
 </body>
 </html>
